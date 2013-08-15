@@ -1,0 +1,129 @@
+
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 1em;
+    font-family: "Source Sans Pro", Helvetica Neue, Helvetica;
+    line-height: 1.6;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3f9ea6;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5 {
+
+}
+
+p {
+    margin: 0 auto 20px;
+}
+
+button,
+input {
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+    overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    font-size: inherit;
+    font-weight: 700;
+    border: 0;
+    border-top: 2px solid rgba(255,255,255,0);
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    outline: 0;
+    line-height: 1;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    -webkit-appearance: none;
+
+}
+
+input[type="submit"]:active {
+    border-top: 2px solid rgba(0,0,0,.2);
+    border-bottom: 2px solid rgba(255,255,255,0);
+    background: #2D747A;
+}
+
+.container {
+    text-align: center;
+    width: 860px;
+    margin: 8% auto;
+    max-width: 84%;
+}
+
+.feedback {
+    padding: 20px 0 0;
+    font-size: 18px;
+}
+
+.title {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.reset {
+    display: none;
+    background: #65DF74 !important;
+    color: #fff;
+}
+
+.reset:active {
+    background: #51B15C !important;
+}
+
+.cards {
+    margin: 5% 0;
+}
+
+
+.cards ul li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 20px;
+    width: 30px;
+    height: 45px;
+    background: #aaa;
+    border-radius: 3px;
+    cursor: pointer;
+    content: '';
+    position: relative;
+}
+
+.cards ul li:hover {
+    background: #bbb;
+}
+
+.wrong {
+    background: #ff5555 !important;
+}
+
+.correct {
+    background:  !important;
+}
+
