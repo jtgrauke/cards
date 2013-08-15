@@ -9,7 +9,7 @@ function pickOne(){
     if (distance == 0) {
         $('.feedback').text("Nice! You got it.").css({color:"#333"});
         $('.reset').show();
-        $(this).css({'background-color':'#65DF74'});
+        $(this).css({'background-color':'#5CD357'});
     } else if (distance == 1) {
         $('.feedback').text("SO CLOSE!");
         $(this).css({'background-color':'#FF5757'});
