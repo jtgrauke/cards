@@ -56,11 +56,6 @@ input[type="submit"]:active {
     max-width: 84%;
 }
 
-.feedback {
-    padding: 20px 0 0;
-    font-size: 18px;
-}
-
 .title {
     margin: 0;
     font-size: 80px;
@@ -70,11 +65,19 @@ input[type="submit"]:active {
 
 .reset {
     display: none;
+}
+
+.reset .win-message {
+    padding: 20px 0 0;
+    font-size: 18px;
+}
+
+.reset input {
     background: #5CD357 !important;
     color: #fff;
 }
 
-.reset:active {
+.reset input:active {
     background: #51B15C !important;
 }
 

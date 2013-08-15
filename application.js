@@ -33,9 +33,8 @@ function pickOne(){
             $(this).addClass('wrong-by-8');
             break;
         default:
-            $('.feedback').text("Nice! You got it.").show();
-            $('.reset').show();
             $(this).addClass('correct');
+            $('.reset').show();
             break;
     }
 }
@@ -45,7 +44,6 @@ function reset(){
     console.log(chosenOne);
     $('.cards ul li').removeClass();
     $('.reset').hide();
-    $('.feedback').hide();
 }
 
 $(document).ready(function(){
@@ -54,6 +52,6 @@ $(document).ready(function(){
     $('.cards ul li').click(pickOne);
 
     // Reload the browser to reset the game, and pick another random number
-    $('.reset').click(reset);
+    $('.reset input').click(reset);
 
 });
