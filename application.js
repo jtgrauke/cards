@@ -12,10 +12,10 @@ function pickOne(){
         $(this).css({'background-color':'#65DF74'});
     } else if (distance == 1) {
         $('.feedback').text("SO CLOSE!");
-        $(this).css({'background-color':'#EB3030'});
+        $(this).css({'background-color':'#FF5757'});
     } else if (distance == 2) {
         $('.feedback').text("Close.");
-        $(this).css({'background-color':'#FF5757'});
+        $(this).css({'background-color':'#FF8657'});
     } else if (distance == 3) {
         $('.feedback').text("Close but no cigar.");
         $(this).css({'background-color':'#FFCB47'});
