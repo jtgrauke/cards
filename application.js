@@ -6,26 +6,38 @@ console.log(chosenOne);
 function pickOne(){
     var choice = $(this).attr('cardNum');
         distance = Math.abs(choice - chosenOne);
-    if (distance == 0) {
-        $('.feedback').text("Nice! You got it.").css({color:"#333"}).show();
-        $('.reset').show();
-        $(this).css({'background-color':'#5CD357'});
-    } else if (distance == 1) {
-        $(this).css({'background-color':'#FF5757'});
-    } else if (distance == 2) {
-        $(this).css({'background-color':'#FF8657'});
-    } else if (distance == 3) {
-        $(this).css({'background-color':'#FFCB47'});
-    } else if (distance == 4) {
-        $(this).css({'background-color':'#FFDC83'});
-    } else if (distance == 5) {
-        $(this).css({'background-color':'#92CCE7'});
-    } else if (distance == 6) {
-        $(this).css({'background-color':'#5EAFD5'});
-    } else if (distance == 7) {
-        $(this).css({'background-color':'#4897BD'});
-    } else {
-        $(this).css({'background-color':'#2C72A2'});
+        cardColor = Array('#5CD357', '#FF5757', '#FF8657', '#FFCB47', '#FFDC83', '#92CCE7', '#5EAFD5', '#4897BD', '#2C72A2');
+
+    switch (distance) {
+        case 1:
+            $(this).css({'background-color':cardColor[1]});
+            break;
+        case 2:
+            $(this).css({'background-color':cardColor[2]});
+            break;
+        case 3:
+            $(this).css({'background-color':cardColor[3]});
+            break;
+        case 4:
+            $(this).css({'background-color':cardColor[4]});
+            break;
+        case 5:
+            $(this).css({'background-color':cardColor[5]});
+            break;
+        case 6:
+            $(this).css({'background-color':cardColor[6]});
+            break;
+        case 7:
+            $(this).css({'background-color':cardColor[7]});
+            break;
+        case 8:
+            $(this).css({'background-color':cardColor[8]});
+            break;
+        default:
+            $('.feedback').text("Nice! You got it.").show();
+            $('.reset').show();
+            $(this).css({'background-color':cardColor[0]});
+            break;
     }
 }
 
