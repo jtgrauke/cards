@@ -6,37 +6,36 @@ console.log(chosenOne);
 function pickOne(){
     var choice = $(this).attr('cardNum');
         distance = Math.abs(choice - chosenOne);
-        cardColor = Array('#5CD357', '#FF5757', '#FF8657', '#FFCB47', '#FFDC83', '#92CCE7', '#5EAFD5', '#4897BD', '#2C72A2');
 
     switch (distance) {
         case 1:
-            $(this).css({'background-color':cardColor[1]});
+            $(this).addClass('wrong-by-1');
             break;
         case 2:
-            $(this).css({'background-color':cardColor[2]});
+            $(this).addClass('wrong-by-2');
             break;
         case 3:
-            $(this).css({'background-color':cardColor[3]});
+            $(this).addClass('wrong-by-3');
             break;
         case 4:
-            $(this).css({'background-color':cardColor[4]});
+            $(this).addClass('wrong-by-4');
             break;
         case 5:
-            $(this).css({'background-color':cardColor[5]});
+            $(this).addClass('wrong-by-5');
             break;
         case 6:
-            $(this).css({'background-color':cardColor[6]});
+            $(this).addClass('wrong-by-6');
             break;
         case 7:
-            $(this).css({'background-color':cardColor[7]});
+            $(this).addClass('wrong-by-7');
             break;
         case 8:
-            $(this).css({'background-color':cardColor[8]});
+            $(this).addClass('wrong-by-8');
             break;
         default:
             $('.feedback').text("Nice! You got it.").show();
             $('.reset').show();
-            $(this).css({'background-color':cardColor[0]});
+            $(this).addClass('correct');
             break;
     }
 }
@@ -44,7 +43,7 @@ function pickOne(){
 function reset(){
     chosenOne = Math.floor((Math.random()*9)+1);
     console.log(chosenOne);
-    $('.cards ul li').css({'background-color': '#aaa'});
+    $('.cards ul li').removeClass();
     $('.reset').hide();
     $('.feedback').hide();
 }

@@ -14,25 +14,6 @@ textarea {
     -webkit-text-size-adjust: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    color: #222;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #3f9ea6;
-    text-decoration: none;
-}
-
-h1,h2,h3,h4,h5 {
-
-}
-
 p {
     margin: 0 auto 20px;
 }
@@ -57,7 +38,7 @@ input[type="submit"] {
     line-height: 1;
     cursor: pointer;
     color: #fff;
-    padding: 10px;
+    padding: 10px 16px 14px;
     -webkit-appearance: none;
 
 }
@@ -121,11 +102,13 @@ input[type="submit"]:active {
     background: #bbb;
 }
 
-.wrong {
-    background: #ff5555 !important;
-}
-
-.correct {
-    background:  !important;
-}
+.wrong-by-1 {background: #FF5757 !important;}
+.wrong-by-2 {background: #FF8657 !important;}
+.wrong-by-3 {background: #FFCB47 !important;}
+.wrong-by-4 {background: #FFDC83 !important;}
+.wrong-by-5 {background: #92CCE7 !important;}
+.wrong-by-6 {background: #5EAFD5 !important;}
+.wrong-by-7 {background: #4897BD !important;}
+.wrong-by-8 {background: #2C72A2 !important;}
+.correct {background: #5CD357 !important;}
 
